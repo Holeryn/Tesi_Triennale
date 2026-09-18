@@ -1,0 +1,8 @@
+\beamer@sectionintoc {1}{Motivazione}{2}{0}{1}
+\beamer@sectionintoc {2}{Introduzione}{3}{0}{2}
+\beamer@sectionintoc {3}{Gruppo di Poincaré}{4}{0}{3}
+\beamer@sectionintoc {4}{Operatori di Casimir}{5}{0}{4}
+\beamer@sectionintoc {5}{Lemma di Schur}{6}{0}{5}
+\beamer@sectionintoc {6}{Particelle massive}{7}{0}{6}
+\beamer@sectionintoc {7}{Particelle massless}{8}{0}{7}
+\beamer@sectionintoc {8}{Conclusioni}{11}{0}{8}

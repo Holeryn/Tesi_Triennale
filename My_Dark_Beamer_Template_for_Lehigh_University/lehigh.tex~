@@ -1,0 +1,710 @@
+\documentclass[11pt,t,aspectratio=169]{beamer}
+
+%================================================
+% IMPOSTAZIONI GENERALI
+%================================================
+
+\setbeamersize{
+    text margin left=1em,
+    text margin right=1em
+}
+
+\usetheme{lehighdark}
+
+% Sostituisce il marrone principale del tema con il nero.
+% Gli exampleblock mantengono il secondo colore originale.
+\colorlet{lubrown}{black}
+
+\usefonttheme{serif}
+\setbeamertemplate{navigation symbols}{}
+
+%================================================
+% PACCHETTI
+%================================================
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing}
+
+%================================================
+% INFORMAZIONI
+%================================================
+
+\title{Rappresentazioni irriducibili del gruppo di Poincaré}
+\author[Francesco Maria Celentano]{%
+    Francesco Maria Celentano\\[0.4em]
+    \small Relatore: Gennaro Miele
+}
+\institute{Università degli Studi di Napoli Federico II}
+
+% Logo della title page
+% \titlegraphic{
+%     \includegraphics[width=1.75in]{Federico_II_University_Logo.pdf}
+% }
+
+%================================================
+% DOCUMENTO
+%================================================
+
+\begin{document}
+
+%================================================
+% TITOLO
+%================================================
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+%================================================
+% INTRODUZIONE
+%================================================
+
+\section{Introduzione}
+
+\begin{frame}[c]
+    \frametitle{Introduzione}
+
+    \begin{columns}[T,onlytextwidth]
+
+        \begin{column}{0.47\textwidth}
+
+            \begin{block}{Rappresentazione di un gruppo}
+
+                \begin{minipage}[t][0.70\textheight][t]{\linewidth}
+
+                    Sia $(G,\cdot)$ un gruppo e $V$ uno spazio vettoriale.
+                    Una rappresentazione di $G$ su $V$ è un omomorfismo
+
+                    \[
+                        D:G\longrightarrow GL(V)
+                    \]
+
+                    dunque
+
+                    \[
+                        D(g_1g_2)=D(g_1)D(g_2),
+                        \qquad g_1,g_2\in G.
+                    \]
+
+                    Scelta una base di $V$, ogni $D(g)$ è rappresentato
+                    da una matrice invertibile.
+
+                \end{minipage}
+
+            \end{block}
+
+        \end{column}
+
+        \hfill
+
+        \begin{column}{0.47\textwidth}
+
+            \begin{exampleblock}{Rappresentazione riducibile}
+
+                \begin{minipage}[t][0.70\textheight][t]{\linewidth}
+
+                    $D$ è riducibile se esiste un sottospazio proprio
+                    non banale $W\subset V$ tale che
+
+                    \[
+                        D(g)W\subseteq W,
+                        \qquad \forall g\in G.
+                    \]
+
+                    Nel caso completamente riducibile,
+
+                    \[
+                        D(g)=
+                        \begin{pmatrix}
+                            D_1(g) & 0      & \cdots & 0 \\
+                            0      & D_2(g) & \cdots & 0 \\
+                            \vdots & \vdots & \ddots & \vdots \\
+                            0      & 0      & \cdots & D_r(g)
+                        \end{pmatrix}.
+                    \]
+
+                \end{minipage}
+
+            \end{exampleblock}
+
+        \end{column}
+
+    \end{columns}
+
+\end{frame}
+
+%================================================
+% GRUPPO DI POINCARE
+%================================================
+
+\section{Gruppo di Poincaré}
+
+\begin{frame}[t]
+
+    \frametitle{Gruppo di Poincaré}
+    \vspace{-0.6cm}
+
+    \begin{columns}[T,onlytextwidth]
+
+        %----------------------------------------
+        % COLONNA SINISTRA
+        %----------------------------------------
+
+        \begin{column}{0.48\textwidth}
+
+            \begin{exampleblock}{Trasformazioni di Poincaré}
+
+                \begin{minipage}[t][0.76\textheight][t]{\linewidth}
+
+                    \[
+                        x'^{\mu}
+                        =
+                        \Lambda^{\mu}{}_{\nu}x^{\nu}
+                        +
+                        a^{\mu}
+                    \]
+
+                    Per trasformazioni infinitesime:
+
+                    \[
+                        \Lambda^{\mu}{}_{\nu}
+                        =
+                        \delta^{\mu}{}_{\nu}
+                        +
+                        \omega^{\mu}{}_{\nu},
+                        \qquad
+                        |\omega^{\mu}{}_{\nu}|\ll 1
+                    \]
+
+                    \vspace{-0.2cm}
+
+                    \[
+                        \delta x^\mu
+                        =
+                        a^\mu
+                        +
+                        \omega^\mu{}_{\nu}x^\nu
+                    \]
+
+                    \vspace{-0.15cm}
+
+                    Dalla condizione di Lorentz
+
+                    \[
+                        \Lambda^T\eta\Lambda=\eta
+                        \quad\Rightarrow\quad
+                        \omega_{\mu\nu}
+                        =
+                        -\omega_{\nu\mu}
+                    \]
+
+                    \vspace{-0.15cm}
+
+                    quindi i generatori sono
+
+                    \[
+                        \begin{gathered}
+                            P^0,\ P^1,\ P^2,\ P^3
+                            \\[-0.35em]
+                            M^{01},M^{02},M^{03},
+                            M^{12},M^{23},M^{31}.
+                        \end{gathered}
+                    \]
+
+                \end{minipage}
+
+            \end{exampleblock}
+
+        \end{column}
+
+        \hfill
+
+        %----------------------------------------
+        % COLONNA DESTRA
+        %----------------------------------------
+
+        \begin{column}{0.47\textwidth}
+
+            \begin{block}{Generatori}
+
+                \[
+                    P^\mu=-i\partial^\mu
+                \]
+
+                \vspace{-0.25cm}
+
+                \[
+                    \left(M^{\mu\nu}\right)^\alpha{}_{\beta}
+                    =
+                    -i\left(
+                        \eta^{\mu\alpha}\delta^\nu_{\beta}
+                        -
+                        \eta^{\nu\alpha}\delta^\mu_{\beta}
+                    \right)
+                \]
+
+            \end{block}
+
+            \begin{block}{Algebra di Poincaré}
+
+                \begin{minipage}[t][0.45\textheight][t]{\linewidth}
+
+                    \[
+                        \bigl[P^\mu,P^\nu\bigr]=0
+                    \]
+
+                    \[
+                        \bigl[M^{\mu\nu},P^\rho\bigr]
+                        =
+                        i\left(
+                            g^{\nu\rho}P^\mu
+                            -
+                            g^{\mu\rho}P^\nu
+                        \right)
+                    \]
+
+                    \[
+                        \begin{aligned}
+                        \bigl[M^{\mu\nu},M^{\rho\sigma}\bigr]
+                        =
+                        i\bigl(
+                        &g^{\nu\rho}M^{\mu\sigma}
+                        -
+                        g^{\mu\rho}M^{\nu\sigma}
+                        \\
+                        &-
+                        g^{\nu\sigma}M^{\mu\rho}
+                        +
+                        g^{\mu\sigma}M^{\nu\rho}
+                        \bigr)
+                        \end{aligned}
+                    \]
+
+                \end{minipage}
+
+            \end{block}
+
+        \end{column}
+
+    \end{columns}
+
+\end{frame}
+
+%================================================
+% OPERATORI DI CASIMIR
+%================================================
+\section{Operatori di Casimir}
+
+\begin{frame}[c]
+    \frametitle{Operatori di Casimir}
+
+    \begin{block}{Vettore di Pauli--Lubanski}
+        \[
+            W^\mu
+            =
+            \frac{1}{2}
+            \epsilon^{\mu\nu\rho\sigma}
+            P_\nu M_{\rho\sigma}
+        \]
+    \end{block}
+
+    \begin{exampleblock}{Operatori di Casimir}
+        \[
+            \mathcal{C}
+            =
+            \left\{
+                P_\mu P^\mu,
+                \;
+                W_\mu W^\mu
+            \right\}
+        \]
+    \end{exampleblock}
+
+    \begin{block}{Algebra dei Casimir}
+        \[
+            [P_\mu P^\mu,P^\rho]=0,
+            \qquad
+            [P_\mu P^\mu,M^{\rho\sigma}]=0
+        \]
+
+        \[
+            [W_\mu W^\mu,P^\rho]=0,
+            \qquad
+            [W_\mu W^\mu,M^{\rho\sigma}]=0
+        \]
+
+        \[
+            [P_\mu P^\mu,W_\nu W^\nu]=0
+        \]
+    \end{block}
+
+\end{frame}
+
+
+%================================================
+% CASO MASSIVO
+%================================================
+
+\section{Particelle massive}
+
+\begin{frame}[c]
+    \frametitle{Interpretazione di $W_\mu W^\mu$ per $m\neq0$}
+
+    \begin{block}{Sistema di riferimento a riposo}
+
+        Consideriamo un sistema di riferimento solidale ad una
+        particella massiva:
+
+        \[
+            P^\mu=(m,\mathbf{0})
+        \]
+
+        In tale sistema:
+
+        \[
+            W_i
+            =
+            -\frac{1}{2}
+            m\,\epsilon_{ijk0}M^{jk}
+            =
+            -mL_i,
+            \qquad
+            W_0=0
+        \]
+
+    \end{block}
+
+    \begin{exampleblock}{Interpretazione}
+
+        $\mathbf{W}$ è legato al Casimir di $SO(3)$. Pertanto:
+
+        \[
+            \mathbf{W}^{\,2}
+            =
+            m^2 S(S+1)
+        \]
+
+    \end{exampleblock}
+
+\end{frame}
+
+%================================================
+% CASO MASSLESS
+%================================================
+
+\section{Particelle massless}
+
+\begin{frame}[c]
+    \frametitle{Interpretazione per $m=0$}
+
+    Per $m=0$ si presentano due possibilità per il secondo Casimir:
+
+    \[
+        W_\mu W^\mu = 0
+        \qquad\text{oppure}\qquad
+        W_\mu W^\mu = -\rho^2.
+    \]
+
+    \begin{block}{Particelle massless}
+
+        Nel caso $W_\mu W^\mu=0$:
+
+        \[
+            \begin{aligned}
+                W_\mu W^\mu |p\rangle &= 0,\\[-0.25em]
+                W_\mu P^\mu |p\rangle &= 0,\\[-0.25em]
+                P_\mu P^\mu |p\rangle &= 0
+            \end{aligned}
+        \]
+
+        \vspace{-0.35cm}
+
+        \[
+            \therefore
+            \qquad
+            W^\mu |p\rangle
+            =
+            h\,P^\mu |p\rangle
+        \]
+
+    \end{block}
+
+    \begin{exampleblock}{Elicità}
+        \[
+            h
+            =
+            \frac{\mathbf{J}\cdot\mathbf{P}}
+                 {|\mathbf{P}|}
+        \]
+    \end{exampleblock}
+
+\end{frame}
+
+%================================================
+% ELICITA
+%================================================
+
+\begin{frame}[c]
+    \frametitle{Elicità per $m=0$ e $W^2 = 0$}
+
+    \begin{columns}[T,onlytextwidth]
+
+        \begin{column}{0.47\textwidth}
+
+            \begin{exampleblock}{Elicità positiva}
+
+                \[
+                    W^\mu=hP^\mu,
+                    \qquad h>0
+                \]
+
+                \begin{center}
+                \begin{tikzpicture}[scale=1.0]
+                    \filldraw (0,0) circle (2pt);
+
+                    \draw[->,thick]
+                        (0,0) -- (3.5,0)
+                        node[right] {$P^\mu$};
+
+                    \draw[->,thick]
+                        (0,0.35) -- (3.5,0.35)
+                        node[right] {$W^\mu$};
+                \end{tikzpicture}
+                \end{center}
+
+                \[
+                    W^\mu\parallel P^\mu
+                \]
+
+            \end{exampleblock}
+
+        \end{column}
+
+        \hfill
+
+        \begin{column}{0.47\textwidth}
+
+            \begin{block}{Elicità negativa}
+
+                \[
+                    W^\mu=hP^\mu,
+                    \qquad h<0
+                \]
+
+                \begin{center}
+                \begin{tikzpicture}[scale=1.0]
+                    \filldraw (1.75,0) circle (2pt);
+
+                    \draw[->,thick]
+                        (1.75,0) -- (3.5,0)
+                        node[right] {$P^\mu$};
+
+                    \draw[->,thick]
+                        (1.75,0.35) -- (0,0.35)
+                        node[left] {$W^\mu$};
+                \end{tikzpicture}
+                \end{center}
+
+                \[
+                    W^\mu\parallel -P^\mu
+                \]
+
+            \end{block}
+
+        \end{column}
+
+    \end{columns}
+
+\end{frame}
+
+
+%================================================
+% CONTINUOUS SPIN
+%================================================
+
+%================================================
+% CONTINUOUS SPIN — HELICITY TOWER
+%================================================
+
+%================================================
+% CONTINUOUS SPIN
+%================================================
+
+\begin{frame}[c]
+    \frametitle{Interpretazione per $m=0$ e $W^2=-\rho^2$}
+
+    \begin{columns}[T,onlytextwidth]
+
+        %----------------------------------------
+        % Colonna sinistra
+        %----------------------------------------
+        \begin{column}{0.50\textwidth}
+
+            \begin{block}{Generatori}
+
+                Per $p^\mu=(E,0,0,E)$ definiamo
+                \[
+                    X_\pm \equiv (M_{01}-M_{31}) \pm i(M_{02}+M_{23}).
+                \]
+
+                Se
+                \[
+                    M_{12}\ket{h}=h\ket{h},
+                \]
+                allora, usando
+                \[
+                    [M_{12},X_\pm]=\pm X_\pm,
+                \]
+                si ottiene
+                \[
+                    X_+\ket{h}\propto \ket{h+1},
+                    \qquad
+                    X_-\ket{h}\propto \ket{h-1}.
+                \]
+
+            \end{block}
+
+            \begin{alertblock}{Conclusione}
+                Gli operatori $X_\pm$ collegano stati con elicità diverse:
+                \[
+                    h \longrightarrow h\pm 1.
+                \]
+                L'irrep contiene quindi una \textbf{torre infinita di elicità}.
+            \end{alertblock}
+
+        \end{column}
+
+        \hfill
+        %----------------------------------------
+        % Colonna destra
+
+        \begin{column}{0.56\textwidth}
+   \vspace{-0.95cm}
+            \begin{center}
+            \begin{tikzpicture}[
+                scale=1.0,
+                every node/.style={font=\normalsize},
+                state/.style={
+                    draw,
+                    rounded corners,
+                    minimum width=2.5cm,
+                    minimum height=0.75cm
+                }
+            ]
+
+                \node[state] (h2)  at (0,4.0) {$\ket{h+2}$};
+                \node[state] (h1)  at (0,2.7) {$\ket{h+1}$};
+                \node[state] (h0)  at (0,1.4) {$\ket{h}$};
+                \node[state] (hm1) at (0,0.1) {$\ket{h-1}$};
+                \node[state] (hm2) at (0,-1.2) {$\ket{h-2}$};
+
+                \node at (0,5.0) {$\vdots$};
+                \node at (0,-2.2) {$\vdots$};
+
+                % Frecce verso l'alto
+                \draw[->,thick] (hm2.east) -- (hm1.east) node[midway,right] {$X_+$};
+                \draw[->,thick] (hm1.east) -- (h0.east)  node[midway,right] {$X_+$};
+                \draw[->,thick] (h0.east)  -- (h1.east)  node[midway,right] {$X_+$};
+                \draw[->,thick] (h1.east)  -- (h2.east)  node[midway,right] {$X_+$};
+
+                % Frecce verso il basso
+                \draw[->,thick] (h2.west)  -- (h1.west)  node[midway,left] {$X_-$};
+                \draw[->,thick] (h1.west)  -- (h0.west)  node[midway,left] {$X_-$};
+                \draw[->,thick] (h0.west)  -- (hm1.west) node[midway,left] {$X_-$};
+                \draw[->,thick] (hm1.west) -- (hm2.west) node[midway,left] {$X_-$};
+
+            \end{tikzpicture}
+            \end{center}
+
+
+            \[
+                \ket{h+n},\qquad n\in\mathbb Z
+            \]
+
+        \end{column}
+
+    \end{columns}
+
+\end{frame}
+
+%================================================
+% CONCLUSIONI
+%================================================
+%================================================
+% TACHIONI E CONCLUSIONI
+%================================================
+%================================================
+% TACHIONI E CONCLUSIONI
+%================================================
+
+\section{Conclusioni}
+
+\begin{frame}[c]
+    \frametitle{Tachioni e conclusioni}
+
+    %----------------------------------------
+    % Tachioni
+    %----------------------------------------
+    \begin{block}{Rappresentazioni tachioniche}
+        \vspace{-0.15cm}
+
+        \[
+            p^\mu=(0,0,0,\mu),
+            \qquad
+            p_\mu p^\mu=-\mu^2<0
+        \]
+
+        \vspace{-0.25cm}
+    \end{block}
+
+    \vspace{0.35cm}
+
+    %----------------------------------------
+    % Classificazione finale
+    %----------------------------------------
+    \begin{exampleblock}{Classificazione delle rappresentazioni irriducibili}
+
+        \[
+        \left\{
+        \begin{array}{lll}
+
+            P_\mu P^\mu=m^2>0
+            &:
+            &
+            |m,s\rangle,
+            \qquad
+            s=0,\frac12,1,\frac32,\ldots
+            \\[0.8em]
+
+            P_\mu P^\mu=0,\quad W^2=0
+            &:
+            &
+            |h\rangle,
+            \qquad
+            h=\pm s
+            \\[0.8em]
+
+            P_\mu P^\mu=0,\quad W^2=-\rho^2
+            &:
+            &
+            \text{spin continuo}
+            \\[0.8em]
+
+            P_\mu P^\mu=-\mu^2<0
+            &:
+            &
+            \text{tachioni}
+
+        \end{array}
+        \right.
+        \]
+
+    \end{exampleblock}
+
+\end{frame}
+\end{document}
