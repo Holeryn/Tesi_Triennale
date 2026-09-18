@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.9.15)  18 SEP 2026 10:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.9.15)  18 SEP 2026 10:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1016,7 +1016,7 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `lehigh.out' has not changed.
-(rerunfilecheck)             Checksum: 357891A83BCBD9106C6B30B9B9834F21;986.
+(rerunfilecheck)             Checksum: C92406A0B0401739510BBD3CEE479AB8;986.
  ) 
 Here is how much of TeX's memory you used:
  26320 strings out of 473197
@@ -1039,7 +1039,7 @@ amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on lehigh.pdf (11 pages, 188070 bytes).
+Output written on lehigh.pdf (11 pages, 190401 bytes).
 PDF statistics:
  211 PDF objects out of 1000 (max. 8388607)
  149 compressed objects within 2 object streams
