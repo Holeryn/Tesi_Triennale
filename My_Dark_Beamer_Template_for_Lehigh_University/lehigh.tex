@@ -378,6 +378,7 @@
 \begin{frame}[t]
     \frametitle{Lemma di Schur}
     \vspace{-0.7cm}
+
     \begin{columns}[T,onlytextwidth]
 
         %------------------------------------------------
@@ -388,16 +389,20 @@
 
             \begin{block}{Lemma di Schur}
 
-                \begin{minipage}[t][0.70\textheight][t]{\linewidth}
+                \begin{minipage}[t][0.78\textheight][t]{\linewidth}
 
                     Sia
                     \[
-                        U(\Lambda,a):\mathcal H\to\mathcal H
+                    U:\mathcal P\longrightarrow GL(\mathcal V)
                     \]
-                    una rappresentazione irriducibile.
+                    una rappresentazione irriducibile del
+                    gruppo di Poincaré.
 
-                    Se un operatore $A$ commuta con tutta la
-                    rappresentazione,
+                    Se un operatore
+                    \[
+                        A:\mathcal H\longrightarrow\mathcal H
+                    \]
+                    commuta con tutta la rappresentazione,
 
                     \[
                         [A,U(\Lambda,a)]=0,
@@ -406,14 +411,10 @@
                     \]
 
                     allora
-
-                    \[
-                        {
-                            A=\lambda\,\mathbb I
-                        }
-                    \]
-
-                    con $\lambda\in\mathbb C$.
+\[
+    A=\lambda\,\mathbb I,
+    \qquad \lambda\in\mathbb C.
+\]
 
                 \end{minipage}
 

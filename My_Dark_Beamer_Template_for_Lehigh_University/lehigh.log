@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.9.15)  20 SEP 2026 12:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.9.15)  20 SEP 2026 15:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -964,7 +964,12 @@ Overfull \vbox (2.33606pt too high) detected at line 373
 [5
 
 ]
-Overfull \vbox (1.54785pt too high) detected at line 479
+Underfull \hbox (badness 10000) in paragraph at lines 480--480
+\OT1/cmr/m/n/10.95 una rap-p-re-sen-tazione ir-riducibile del
+ []
+
+
+Overfull \vbox (1.54785pt too high) detected at line 480
  []
 
 
@@ -984,12 +989,12 @@ Overfull \vbox (1.54785pt too high) detected at line 479
 [9
 
 ]
-Overfull \hbox (25.99957pt too wide) detected at line 766
+Overfull \hbox (25.99957pt too wide) detected at line 767
 [][][][][][][][][] [][] [][][][][][][]
  []
 
 
-Overfull \vbox (93.74829pt too high) detected at line 766
+Overfull \vbox (93.74829pt too high) detected at line 767
  []
 
 
@@ -1039,7 +1044,7 @@ amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on lehigh.pdf (11 pages, 190563 bytes).
+Output written on lehigh.pdf (11 pages, 190778 bytes).
 PDF statistics:
  211 PDF objects out of 1000 (max. 8388607)
  149 compressed objects within 2 object streams
