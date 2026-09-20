@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1789720242.99829 "lehigh.tex" "lehigh.pdf" "lehigh" 1789720244.21719 0
+["pdflatex"] 1789898883.79468 "lehigh.tex" "lehigh.pdf" "lehigh" 1789898885.01409 0
   "/etc/texmf/web2c/texmf.cnf" 1785440341.17583 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -229,10 +229,10 @@
   "beamerinnerthemelehighdark.sty" 1789720092.37252 1628 47af1294e07d1c27087941120221edba ""
   "beamerouterthemelehighdark.sty" 1789720092.37252 2202 51b765c88ab4779f1e77fd07ef2a5343 ""
   "beamerthemelehighdark.sty" 1789720092.37252 270 6227cae55f70c52c0053945c85f2bd8c ""
-  "lehigh.aux" 1789720244.10996 4147 f359a15ffe44ae2185a35bebc8b6bce2 "pdflatex"
-  "lehigh.nav" 1789720244.10996 2509 57ed11c0b3b18a42e68b2f3ec3b160c6 "pdflatex"
-  "lehigh.out" 1789720244.10996 986 c92406a0b0401739510bbd3cee479ab8 "pdflatex"
-  "lehigh.tex" 1789720115.13873 20229 f3cf0a8cd3c6111f11c1a78c8f2d93f0 ""
+  "lehigh.aux" 1789898884.90699 4147 f359a15ffe44ae2185a35bebc8b6bce2 "pdflatex"
+  "lehigh.nav" 1789898884.90699 2509 57ed11c0b3b18a42e68b2f3ec3b160c6 "pdflatex"
+  "lehigh.out" 1789898884.90699 986 c92406a0b0401739510bbd3cee479ab8 "pdflatex"
+  "lehigh.tex" 1789898877.03505 20582 f35acf334f29c233a3957dc98ea6ff7e ""
   (generated)
   "lehigh.aux"
   "lehigh.log"
