@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.9.15)  20 SEP 2026 15:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.9.15)  24 SEP 2026 12:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -929,26 +929,27 @@ Dictionary: translator-theorem-dictionary, Language: English
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 84.
 
-[2
 
-]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 152
-.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 152
-.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 84.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
+[2
+
+]
+
 [3
 
 ]
-Overfull \vbox (4.0053pt too high) detected at line 321
+Overfull \vbox (6.73836pt too high) detected at line 328
  []
 
 
@@ -956,7 +957,7 @@ Overfull \vbox (4.0053pt too high) detected at line 321
 [4
 
 ]
-Overfull \vbox (2.33606pt too high) detected at line 373
+Overfull \vbox (2.33606pt too high) detected at line 380
  []
 
 
@@ -964,12 +965,12 @@ Overfull \vbox (2.33606pt too high) detected at line 373
 [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 480--480
+Underfull \hbox (badness 10000) in paragraph at lines 487--487
 \OT1/cmr/m/n/10.95 una rap-p-re-sen-tazione ir-riducibile del
  []
 
 
-Overfull \vbox (1.54785pt too high) detected at line 480
+Overfull \vbox (1.54785pt too high) detected at line 487
  []
 
 
@@ -989,12 +990,12 @@ Overfull \vbox (1.54785pt too high) detected at line 480
 [9
 
 ]
-Overfull \hbox (25.99957pt too wide) detected at line 767
+Overfull \hbox (25.99957pt too wide) detected at line 774
 [][][][][][][][][] [][] [][][][][][][]
  []
 
 
-Overfull \vbox (93.74829pt too high) detected at line 767
+Overfull \vbox (93.74829pt too high) detected at line 774
  []
 
 
@@ -1044,7 +1045,7 @@ amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on lehigh.pdf (11 pages, 190778 bytes).
+Output written on lehigh.pdf (11 pages, 190426 bytes).
 PDF statistics:
  211 PDF objects out of 1000 (max. 8388607)
  149 compressed objects within 2 object streams

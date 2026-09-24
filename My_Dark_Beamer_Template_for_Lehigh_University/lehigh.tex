@@ -71,6 +71,16 @@
       Richiediamo che gli stati associati a una singola specie di particella elementare trasformino secondo una rappresentazione unitaria irriducibile del gruppo di Poincaré.
     \end{center}
 
+    \vspace{0.6cm}
+
+    \begin{block}{Convenzione}
+        \[
+            \eta_{\mu\nu}
+            =
+            \operatorname{diag}(+1,-1,-1,-1)
+        \]
+    \end{block}
+
 \end{frame}
 
 %================================================
@@ -257,22 +267,19 @@
 
             \begin{block}{Generatori}
 
-                \[
-                    P^\mu=-i\partial^\mu
-                \]
+              \[
+    P^\mu=-i\partial^\mu
+\]
 
-                \vspace{-0.25cm}
-
-                \[
-                    \left(M^{\mu\nu}\right)^\alpha{}_{\beta}
-                    =
-                    -i\left(
-                        \eta^{\mu\alpha}\delta^\nu_{\beta}
-                        -
-                        \eta^{\nu\alpha}\delta^\mu_{\beta}
-                    \right)
-                \]
-
+\[
+M^{\mu\nu}
+=
+i\left(
+x^\mu \partial^\nu
+-
+x^\nu \partial^\mu
+\right)
+\]
             \end{block}
 
             \begin{block}{Algebra di Poincaré}
@@ -287,9 +294,9 @@
                         \bigl[M^{\mu\nu},P^\rho\bigr]
                         =
                         i\left(
-                            g^{\nu\rho}P^\mu
+                            \eta^{\nu\rho}P^\mu
                             -
-                            g^{\mu\rho}P^\nu
+                            \eta^{\mu\rho}P^\nu
                         \right)
                     \]
 
@@ -298,14 +305,14 @@
                         \bigl[M^{\mu\nu},M^{\rho\sigma}\bigr]
                         =
                         i\bigl(
-                        &g^{\nu\rho}M^{\mu\sigma}
+                        &\eta^{\nu\rho}M^{\mu\sigma}
                         -
-                        g^{\mu\rho}M^{\nu\sigma}
+                        \eta^{\mu\rho}M^{\nu\sigma}
                         \\
                         &-
-                        g^{\nu\sigma}M^{\mu\rho}
+                        \eta^{\nu\sigma}M^{\mu\rho}
                         +
-                        g^{\mu\sigma}M^{\nu\rho}
+                        \eta^{\mu\sigma}M^{\nu\rho}
                         \bigr)
                         \end{aligned}
                     \]
