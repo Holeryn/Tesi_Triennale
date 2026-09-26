@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.9.15)  24 SEP 2026 12:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.9.15)  26 SEP 2026 12:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1045,7 +1045,7 @@ amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on lehigh.pdf (11 pages, 190426 bytes).
+Output written on lehigh.pdf (11 pages, 190324 bytes).
 PDF statistics:
  211 PDF objects out of 1000 (max. 8388607)
  149 compressed objects within 2 object streams
